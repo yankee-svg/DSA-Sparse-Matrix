@@ -1,6 +1,9 @@
 # DSA-Sparse-Matrix
 
-how to run the code 
-1.navigate to the script dir 
-2 run the python file 
-3.
+## How to Run the Code
+
+1. Navigate to the script directory:
+   ```bash
+   cd path/to/your/script
+
+python filename.py
