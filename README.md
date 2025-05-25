@@ -13,28 +13,29 @@ This project implements a memory-efficient sparse matrix data structure with sup
 ## Project Structure
 
 ```
-src/
-├── main.py                 # Main entry point
-├── components/
-│   ├── SparseMatrix.py     # Core sparse matrix implementation
-│   └── MatrixOperations.py # Operations and user interface
-└── sample_inputs/
-    ├── matrix1.txt         # Sample 3x3 matrix
-    ├── matrix2.txt         # Sample 3x3 matrix
-    ├── large_matrix1.txt   # Sample 1000x1000 matrix
-    └── large_matrix2.txt   # Sample 1000x1000 matrix
+├── src/
+│   ├── components/
+│   │   └── __pycache__/           # Python bytecode cache
+│   ├─
+│   ├── results/
+│   │   └── addition_result.txt    # Output from matrix operations
+│   └── sparse_matrix.py           # python script
+├── sample_inputs/
+│   
+│   ├── easy_sample_01_2.txt       # test file
+│   └── easy_sample_01_3.txt       # test file 
 ```
 
 ## Usage
 
 1. Navigate to the src directory:
    ```bash
-   cd src
+   cd src/components
    ```
 
 2. Run the program:
    ```bash
-   python main.py
+   python sparse_matrix.py
    ```
 
 3. Follow the interactive prompts to:
@@ -42,16 +43,7 @@ src/
    - Provide paths to two input matrix files
    - View the results saved to a results file
 
-## Input File Format
-
-Matrix files should follow this format:
-```
-rows=<number_of_rows>
-cols=<number_of_columns>
-(row, col, value)
-(row, col, value)
-...
-```
+## Input File Format from the txt
 
 Example:
 ```
