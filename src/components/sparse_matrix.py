@@ -1,10 +1,10 @@
 import os
 class SparseMatrix:
     def __init__(self, file_path=None, num_rows=0, num_cols=0):
-        # initialize a sparse matrix
+        # initialize a the python script
         self.rows = 0
         self.cols = 0
-        self.data = {} #to store non zero elements
+        self.data = {} #keep  non zero elements
         if file_path is not None:
             self._load_from_file(file_path)
         else:
@@ -97,8 +97,8 @@ class SparseMatrix:
                 f.write(f"({r}, {c}, {v})\n")
 
 def main():
-    # function to handle user input and perform operations
-    os.makedirs("results", exist_ok=True) #creates results directory if it doen't exist
+    #  handle user input and perform operations
+    os.makedirs("results", exist_ok=True) #creates results directory 
     print("Sparse Matrix Operations(add, subtract, multiply)")
     print("1. Addition")
     print("2. Subtractraction")
